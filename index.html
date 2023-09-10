@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .temp {
+            padding: 15%;
+        }
+
+        /* Add padding to the internal rows with class "temp" */
+        .temp1 {
+            padding: 20px; /* Adjust the padding as needed */
+        }
+        body { 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img1.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Sujan's Temperature Converter
+          </a>
+        </div>
+    </nav>
+    <div class="temp">
+        <table>
+            <tr>
+                <td class="temp1">Choose Which unit it is in  :</td>
+                <td class="temp1">
+                    <select name="temp" id="temp">
+                        <option value="0">kelvin</option>
+                        <option value="1">celsius</option>
+                        <option value="2">fahrenheit</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="temp1">Enter the temperature in that unit :</td>
+                <td class="temp1">
+                    <input type="number" id="inputTemperature">
+                </td>
+            </tr>
+            <tr>
+                <td class="temp1">Choose Which unit to convert to :</td>
+                <td class="temp1">
+                    <select name="temp" id="temp1">
+                        <option value="-1">select one</option>
+                        <option value="0">kelvin</option>
+                        <option value="1">celsius</option>
+                        <option value="2">fahrenheit</option>
+                    </select>
+                </td>
+                <td class="temp1">
+                    <button class="submitButton" type="submit" id="submitButton">Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="temp1">The data in converted unit is :</td>
+                <td class="temp1">
+                    <span id="outputTemperature">---</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
